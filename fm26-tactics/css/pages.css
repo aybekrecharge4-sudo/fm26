@@ -11,7 +11,7 @@
 }
 
 .fm26-app .detail-back:hover {
-    color: var(--fm26-text-primary);
+    color: var(--fm26-accent-primary);
 }
 
 .fm26-app .detail-title-row {
@@ -22,10 +22,8 @@
 }
 
 .fm26-app .detail-title {
-    font-family: var(--fm26-font-display);
-    font-size: 2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 
 .fm26-app .detail-author {
@@ -54,7 +52,7 @@
 /* Evidence Panel */
 .fm26-app .evidence-panel {
     background: var(--fm26-bg-card);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-lg);
     padding: var(--fm26-space-lg);
 }
@@ -78,12 +76,13 @@
     padding: var(--fm26-space-sm) var(--fm26-space-md);
     background: var(--fm26-bg-input);
     border-radius: var(--fm26-radius-md);
+    border-left: 3px solid var(--fm26-accent-primary);
 }
 
 /* Instructions Panel */
 .fm26-app .instructions-panel {
     background: var(--fm26-bg-card);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-lg);
     padding: var(--fm26-space-lg);
 }
@@ -140,8 +139,8 @@
 }
 
 .fm26-app .compare-vs {
-    font-family: var(--fm26-font-display);
     font-size: 1.5rem;
+    font-weight: 800;
     color: var(--fm26-text-muted);
 }
 
@@ -163,6 +162,7 @@
 
 .fm26-app .compare-slot:hover {
     border-color: var(--fm26-accent-primary);
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1);
 }
 
 .fm26-app .compare-slot.filled {
@@ -182,7 +182,7 @@
 
 .fm26-app .compare-slot-formation {
     font-size: 0.8rem;
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
 }
 
 /* Glossary Page */
@@ -202,9 +202,15 @@
 
 .fm26-app .glossary-card {
     background: var(--fm26-bg-card);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-lg);
     padding: var(--fm26-space-lg);
+    transition: all var(--fm26-transition-fast);
+}
+
+.fm26-app .glossary-card:hover {
+    border-color: var(--fm26-accent-primary);
+    box-shadow: var(--fm26-shadow-card-hover);
 }
 
 .fm26-app .glossary-term {
@@ -246,7 +252,7 @@
 
 .fm26-app .recommend-result-card {
     background: var(--fm26-bg-card);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-lg);
     padding: var(--fm26-space-lg);
     display: grid;
@@ -259,12 +265,12 @@
 
 .fm26-app .recommend-result-card:hover {
     border-color: var(--fm26-accent-primary);
-    background: var(--fm26-bg-card-hover);
+    box-shadow: var(--fm26-shadow-card-hover);
 }
 
 .fm26-app .recommend-rank {
-    font-family: var(--fm26-font-display);
     font-size: 2rem;
+    font-weight: 800;
     color: var(--fm26-text-muted);
     width: 50px;
     text-align: center;
@@ -282,7 +288,7 @@
 
 .fm26-app .recommend-result-desc {
     font-size: 0.85rem;
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
 }
 
 .fm26-app .recommend-result-ppg {
@@ -308,7 +314,7 @@
     }
 
     .fm26-app .detail-title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .fm26-app .recommend-result-card {

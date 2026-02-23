@@ -373,7 +373,7 @@ const PitchVisualizer = (() => {
         t.setAttribute('font-size', size);
         t.setAttribute('font-weight', weight || 'normal');
         t.setAttribute('text-anchor', 'middle');
-        t.setAttribute('font-family', "'DM Sans', 'Inter', system-ui, sans-serif");
+        t.setAttribute('font-family', "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif");
         t.textContent = content;
         return t;
     }

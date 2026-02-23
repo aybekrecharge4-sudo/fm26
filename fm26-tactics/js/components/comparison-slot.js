@@ -32,7 +32,9 @@ const ComparisonSlot = (() => {
             </div>
         `;
 
-        document.body.appendChild(overlay);
+        // Append inside .fm26-app so modal inherits namespaced styles
+        const appRoot = document.getElementById('fm26-app') || document.body;
+        appRoot.appendChild(overlay);
 
         function renderResults(query) {
             const filtered = query

@@ -16,7 +16,7 @@
 /* Header */
 .fm26-app .app-header {
     background: var(--fm26-bg-secondary);
-    border-bottom: 1px solid var(--fm26-border-default);
+    border-bottom: 2px solid var(--fm26-border-default);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -39,7 +39,7 @@
     gap: var(--fm26-space-sm);
     color: var(--fm26-text-primary);
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     white-space: nowrap;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .fm26-app .logo-icon {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 /* Navigation */
@@ -60,22 +60,23 @@
 
 .fm26-app .nav-link {
     padding: var(--fm26-space-sm) var(--fm26-space-md);
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
     font-size: 0.9rem;
     font-weight: 500;
-    border-radius: var(--fm26-radius-md);
+    border-radius: var(--fm26-radius-sm);
     transition: all var(--fm26-transition-fast);
     white-space: nowrap;
 }
 
 .fm26-app .nav-link:hover {
     color: var(--fm26-text-primary);
-    background: var(--fm26-bg-card);
+    background: var(--fm26-bg-input);
 }
 
 .fm26-app .nav-link.active {
     color: var(--fm26-accent-primary);
-    background: rgba(5, 226, 126, 0.1);
+    background: rgba(34, 197, 94, 0.08);
+    font-weight: 600;
 }
 
 /* Mobile Nav Toggle */
@@ -110,7 +111,7 @@
 /* Footer */
 .fm26-app .app-footer {
     background: var(--fm26-bg-secondary);
-    border-top: 1px solid var(--fm26-border-default);
+    border-top: 2px solid var(--fm26-border-default);
     text-align: center;
     padding: var(--fm26-space-lg) var(--fm26-space-md);
     color: var(--fm26-text-muted);
@@ -128,15 +129,13 @@
 }
 
 .fm26-app .page-title {
-    font-family: var(--fm26-font-display);
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 800;
     color: var(--fm26-text-primary);
 }
 
 .fm26-app .page-subtitle {
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
     margin-top: var(--fm26-space-xs);
     font-size: 0.95rem;
 }
@@ -159,7 +158,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: var(--fm26-space-md);
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
     font-size: 0.9rem;
 }
 
@@ -219,11 +218,11 @@
 
 .fm26-app .section-title {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--fm26-text-primary);
     margin-bottom: var(--fm26-space-md);
     padding-bottom: var(--fm26-space-sm);
-    border-bottom: 1px solid var(--fm26-border-default);
+    border-bottom: 2px solid var(--fm26-border-default);
 }
 
 /* Responsive */
@@ -280,7 +279,7 @@
         background: var(--fm26-bg-secondary);
         flex-direction: column;
         padding: var(--fm26-space-md);
-        border-bottom: 1px solid var(--fm26-border-default);
+        border-bottom: 2px solid var(--fm26-border-default);
         box-shadow: var(--fm26-shadow-dropdown);
     }
 
@@ -295,7 +294,7 @@
     }
 
     .fm26-app .page-title {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .fm26-app .tactic-grid {

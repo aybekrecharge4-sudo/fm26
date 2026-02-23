@@ -35,13 +35,16 @@ const ComparePage = (() => {
         slotAEl.innerHTML = ComparisonSlot.render('slotA-inner', tacticA);
         slotBEl.innerHTML = ComparisonSlot.render('slotB-inner', tacticB);
 
-        // Bind click handlers
+        // Bind click handlers — use closest() so clicks on child elements work
         const slotAInner = document.getElementById('slotA-inner');
         const slotBInner = document.getElementById('slotB-inner');
 
         if (slotAInner) {
             slotAInner.addEventListener('click', (e) => {
-                if (e.target.dataset?.action === 'change' || !tacticA) {
+                const isChangeBtn = e.target.closest('[data-action="change"]');
+                if (isChangeBtn || !tacticA) {
+                    e.preventDefault();
+                    e.stopPropagation();
                     ComparisonSlot.showSelector((t) => {
                         tacticA = t;
                         renderSlots();
@@ -53,7 +56,10 @@ const ComparePage = (() => {
 
         if (slotBInner) {
             slotBInner.addEventListener('click', (e) => {
-                if (e.target.dataset?.action === 'change' || !tacticB) {
+                const isChangeBtn = e.target.closest('[data-action="change"]');
+                if (isChangeBtn || !tacticB) {
+                    e.preventDefault();
+                    e.stopPropagation();
                     ComparisonSlot.showSelector((t) => {
                         tacticB = t;
                         renderSlots();

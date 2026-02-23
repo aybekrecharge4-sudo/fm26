@@ -77,6 +77,7 @@ const App = (() => {
 
     // Boot
     document.addEventListener('DOMContentLoaded', () => {
+        Router.interceptLinks();
         setupMobileNav();
         init();
     });

@@ -1,6 +1,7 @@
 /**
  * Hash-based SPA Router
  * Supports parameterized routes like 'tactic/:slug'
+ * Intercepts all hash-link clicks to prevent WordPress page reloads
  */
 const Router = (() => {
     const routes = {};
@@ -37,7 +38,13 @@ const Router = (() => {
     }
 
     function navigate(hash) {
-        window.location.hash = hash;
+        const cleanHash = hash.startsWith('#') ? hash : '#' + hash;
+        // If same hash, force re-render
+        if (window.location.hash === cleanHash) {
+            handleRoute();
+        } else {
+            window.location.hash = cleanHash;
+        }
     }
 
     function handleRoute() {
@@ -68,7 +75,12 @@ const Router = (() => {
             }
         }
 
-        window.scrollTo(0, 0);
+        // Scroll the fm26-app container into view instead of window top
+        const app = document.getElementById('fm26-app');
+        if (app) {
+            app.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
         updateNav(pattern);
         postHeightToParent();
     }
@@ -92,10 +104,27 @@ const Router = (() => {
         }
     }
 
+    // Intercept ALL hash-link clicks inside .fm26-app to prevent WordPress page reloads
+    function interceptLinks() {
+        const app = document.getElementById('fm26-app');
+        if (!app) return;
+
+        app.addEventListener('click', (e) => {
+            // Find the closest <a> tag
+            const link = e.target.closest('a[href^="#"]');
+            if (link) {
+                e.preventDefault();
+                e.stopPropagation();
+                const hash = link.getAttribute('href');
+                navigate(hash.replace('#', ''));
+            }
+        });
+    }
+
     function getCurrentRoute() { return currentRoute; }
     function getCurrentParams() { return currentParams; }
 
     window.addEventListener('hashchange', handleRoute);
 
-    return { register, navigate, handleRoute, getCurrentRoute, getCurrentParams, postHeightToParent };
+    return { register, navigate, handleRoute, getCurrentRoute, getCurrentParams, postHeightToParent, interceptLinks };
 })();

@@ -12,6 +12,7 @@
     height: auto;
     border-radius: var(--fm26-radius-lg);
     box-shadow: var(--fm26-shadow-card);
+    border: 2px solid var(--fm26-border-default);
 }
 
 .fm26-app .pitch-label {
@@ -38,6 +39,7 @@
     border-radius: var(--fm26-radius-full);
     padding: 3px;
     gap: 2px;
+    border: 2px solid var(--fm26-border-default);
 }
 
 .fm26-app .phase-toggle-btn {
@@ -57,11 +59,12 @@
 }
 
 .fm26-app .phase-toggle-btn.active {
-    background: var(--fm26-bg-card);
+    background: var(--fm26-bg-secondary);
     color: var(--fm26-accent-primary);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-/* Dual formation â€” desktop: side by side */
+/* Dual formation — desktop: side by side */
 .fm26-app .dual-formation {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -73,7 +76,7 @@
     width: 100%;
 }
 
-/* Mobile formation â€” hidden on desktop, shown on mobile */
+/* Mobile formation — hidden on desktop, shown on mobile */
 .fm26-app .mobile-formation {
     display: none;
 }

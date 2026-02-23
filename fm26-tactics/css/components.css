@@ -1,4 +1,4 @@
-/* Buttons — Recharge.com pill style */
+/* Buttons */
 .fm26-app .btn {
     display: inline-flex;
     align-items: center;
@@ -20,29 +20,30 @@
 
 .fm26-app .btn-primary:hover {
     background: var(--fm26-accent-primary-hover);
-    box-shadow: 0 4px 16px rgba(5, 226, 126, 0.3);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
 }
 
 .fm26-app .btn-secondary {
-    background: var(--fm26-bg-card);
+    background: var(--fm26-bg-secondary);
     color: var(--fm26-text-primary);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
 }
 
 .fm26-app .btn-secondary:hover {
-    background: var(--fm26-bg-card-hover);
-    border-color: var(--fm26-border-hover);
+    border-color: var(--fm26-accent-primary);
+    color: var(--fm26-accent-primary);
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1);
 }
 
 .fm26-app .btn-ghost {
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
     padding: var(--fm26-space-xs) var(--fm26-space-md);
     height: auto;
 }
 
 .fm26-app .btn-ghost:hover {
-    color: var(--fm26-text-primary);
-    background: var(--fm26-bg-card);
+    color: var(--fm26-accent-primary);
+    background: rgba(34, 197, 94, 0.06);
 }
 
 .fm26-app .btn-sm {
@@ -53,11 +54,11 @@
 
 .fm26-app .btn-mobile-filter {
     display: none;
-    background: var(--fm26-bg-card);
-    border: 1px solid var(--fm26-border-default);
+    background: var(--fm26-bg-secondary);
+    border: 2px solid var(--fm26-border-default);
     padding: var(--fm26-space-sm) var(--fm26-space-md);
     border-radius: var(--fm26-radius-full);
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
     font-size: 0.85rem;
     font-weight: 500;
     height: 40px;
@@ -66,15 +67,14 @@
 /* Cards */
 .fm26-app .card {
     background: var(--fm26-bg-card);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-lg);
     padding: var(--fm26-space-lg);
     transition: all var(--fm26-transition-normal);
 }
 
 .fm26-app .card:hover {
-    background: var(--fm26-bg-card-hover);
-    border-color: var(--fm26-border-hover);
+    border-color: var(--fm26-accent-primary);
     box-shadow: var(--fm26-shadow-card-hover);
 }
 
@@ -85,7 +85,7 @@
 /* Tactic Card */
 .fm26-app .tactic-card {
     background: var(--fm26-bg-card);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-lg);
     padding: var(--fm26-space-lg);
     cursor: pointer;
@@ -96,9 +96,8 @@
 }
 
 .fm26-app .tactic-card:hover {
-    background: var(--fm26-bg-card-hover);
     border-color: var(--fm26-accent-primary);
-    box-shadow: 0 8px 24px rgba(5, 226, 126, 0.12);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.12);
     transform: translateY(-2px);
 }
 
@@ -169,7 +168,7 @@
 .fm26-app .badge {
     display: inline-flex;
     align-items: center;
-    padding: 2px 10px;
+    padding: 3px 10px;
     border-radius: var(--fm26-radius-full);
     font-size: 0.75rem;
     font-weight: 600;
@@ -177,60 +176,63 @@
 }
 
 .fm26-app .badge-formation {
-    background: rgba(0, 107, 229, 0.15);
-    color: var(--fm26-accent-secondary);
-    border: 1px solid rgba(0, 107, 229, 0.3);
+    background: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
 }
 
 .fm26-app .badge-style {
-    background: rgba(5, 226, 126, 0.1);
-    color: var(--fm26-accent-primary);
-    border: 1px solid rgba(5, 226, 126, 0.2);
+    background: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
 }
 
 .fm26-app .badge-intensity {
-    background: rgba(251, 191, 36, 0.1);
-    color: var(--fm26-accent-gold);
-    border: 1px solid rgba(251, 191, 36, 0.2);
+    background: #fffbeb;
+    color: #d97706;
+    border: 1px solid #fde68a;
 }
 
 .fm26-app .badge-patch {
-    background: rgba(157, 175, 179, 0.1);
-    color: var(--fm26-text-secondary);
-    border: 1px solid rgba(157, 175, 179, 0.2);
+    background: #f3f4f6;
+    color: var(--fm26-text-muted);
+    border: 1px solid var(--fm26-border-default);
 }
 
 .fm26-app .badge-verified {
-    background: rgba(5, 226, 126, 0.12);
-    color: var(--fm26-status-verified);
-    border: 1px solid rgba(5, 226, 126, 0.3);
+    background: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
 }
 
 .fm26-app .badge-outdated {
-    background: rgba(245, 158, 11, 0.12);
-    color: var(--fm26-status-outdated);
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    background: #fffbeb;
+    color: #d97706;
+    border: 1px solid #fde68a;
 }
 
 .fm26-app .badge-untested {
-    background: rgba(93, 113, 117, 0.15);
-    color: var(--fm26-status-untested);
-    border: 1px solid rgba(93, 113, 117, 0.3);
+    background: #f3f4f6;
+    color: #6b7280;
+    border: 1px solid #d1d5db;
 }
 
 .fm26-app .badge-duty-attack {
-    background: rgba(239, 68, 68, 0.15);
+    background: #fef2f2;
     color: var(--fm26-duty-attack);
+    border: 1px solid #fecaca;
 }
 
 .fm26-app .badge-duty-support {
-    background: rgba(234, 179, 8, 0.15);
-    color: var(--fm26-duty-support);
+    background: #fefce8;
+    color: #ca8a04;
+    border: 1px solid #fef08a;
 }
 
 .fm26-app .badge-duty-defend {
-    background: rgba(59, 130, 246, 0.15);
+    background: #eff6ff;
     color: var(--fm26-duty-defend);
+    border: 1px solid #bfdbfe;
 }
 
 /* Chips */
@@ -241,20 +243,21 @@
     border-radius: var(--fm26-radius-full);
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     color: var(--fm26-text-secondary);
+    background: var(--fm26-bg-secondary);
     cursor: pointer;
     transition: all var(--fm26-transition-fast);
     user-select: none;
 }
 
 .fm26-app .chip:hover {
-    border-color: var(--fm26-border-hover);
-    color: var(--fm26-text-primary);
+    border-color: var(--fm26-accent-primary);
+    color: var(--fm26-accent-primary);
 }
 
 .fm26-app .chip.active {
-    background: rgba(5, 226, 126, 0.12);
+    background: #f0fdf4;
     border-color: var(--fm26-accent-primary);
     color: var(--fm26-accent-primary);
 }
@@ -263,8 +266,8 @@
 .fm26-app .input {
     width: 100%;
     padding: 10px var(--fm26-space-md);
-    background: var(--fm26-bg-input);
-    border: 1px solid var(--fm26-border-default);
+    background: var(--fm26-bg-secondary);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-md);
     color: var(--fm26-text-primary);
     font-size: 0.9rem;
@@ -275,7 +278,7 @@
 .fm26-app .input:focus {
     outline: none;
     border-color: var(--fm26-accent-primary);
-    box-shadow: 0 0 0 3px rgba(5, 226, 126, 0.15);
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
 }
 
 .fm26-app .input::placeholder {
@@ -285,13 +288,13 @@
 .fm26-app .select {
     width: 100%;
     padding: 10px var(--fm26-space-md);
-    background: var(--fm26-bg-input);
-    border: 1px solid var(--fm26-border-default);
+    background: var(--fm26-bg-secondary);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-md);
     color: var(--fm26-text-primary);
     font-size: 0.9rem;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239DAFB3' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%236b7280' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 12px center;
     padding-right: 32px;
@@ -302,7 +305,7 @@
 .fm26-app .select:focus {
     outline: none;
     border-color: var(--fm26-accent-primary);
-    box-shadow: 0 0 0 3px rgba(5, 226, 126, 0.15);
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
 }
 
 /* Filter Sidebar */
@@ -319,7 +322,7 @@
     display: block;
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: var(--fm26-space-sm);
@@ -335,7 +338,7 @@
     width: 100%;
     padding: var(--fm26-space-sm);
     background: transparent;
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-full);
     color: var(--fm26-text-muted);
     font-size: 0.85rem;
@@ -374,9 +377,9 @@
 }
 
 .fm26-app .tab.active {
-    background: var(--fm26-bg-card);
+    background: var(--fm26-bg-secondary);
     color: var(--fm26-accent-primary);
-    box-shadow: 0 1px 4px rgba(0, 20, 22, 0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 /* Stat Bar */
@@ -392,7 +395,7 @@
 
 .fm26-app .stat-bar-label {
     font-size: 0.8rem;
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
 }
 
 .fm26-app .stat-bar-value {
@@ -442,6 +445,7 @@
 .fm26-app .tag-clickable:hover {
     border-color: var(--fm26-accent-primary);
     color: var(--fm26-accent-primary);
+    background: #f0fdf4;
 }
 
 /* Instruction Chip */
@@ -468,21 +472,21 @@
 }
 
 .fm26-app .patch-banner-verified {
-    background: rgba(5, 226, 126, 0.08);
-    border: 1px solid rgba(5, 226, 126, 0.25);
-    color: var(--fm26-status-verified);
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #16a34a;
 }
 
 .fm26-app .patch-banner-outdated {
-    background: rgba(245, 158, 11, 0.08);
-    border: 1px solid rgba(245, 158, 11, 0.25);
-    color: var(--fm26-status-outdated);
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #d97706;
 }
 
 .fm26-app .patch-banner-untested {
-    background: rgba(93, 113, 117, 0.08);
-    border: 1px solid rgba(93, 113, 117, 0.25);
-    color: var(--fm26-status-untested);
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #6b7280;
 }
 
 /* Comparison Stat Row */
@@ -551,7 +555,7 @@
 }
 
 .fm26-app .wizard-progress-step.current {
-    background: rgba(5, 226, 126, 0.4);
+    background: rgba(34, 197, 94, 0.35);
 }
 
 .fm26-app .wizard-step-title {
@@ -563,7 +567,7 @@
 
 .fm26-app .wizard-step-subtitle {
     text-align: center;
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
     margin-bottom: var(--fm26-space-xl);
     font-size: 0.9rem;
 }
@@ -576,7 +580,7 @@
 
 .fm26-app .wizard-option {
     padding: var(--fm26-space-md);
-    background: var(--fm26-bg-card);
+    background: var(--fm26-bg-secondary);
     border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-lg);
     text-align: center;
@@ -587,13 +591,13 @@
 }
 
 .fm26-app .wizard-option:hover {
-    border-color: var(--fm26-border-hover);
-    background: var(--fm26-bg-card-hover);
+    border-color: var(--fm26-accent-primary);
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1);
 }
 
 .fm26-app .wizard-option.selected {
     border-color: var(--fm26-accent-primary);
-    background: rgba(5, 226, 126, 0.06);
+    background: #f0fdf4;
     color: var(--fm26-accent-primary);
 }
 
@@ -606,7 +610,7 @@
 .fm26-app .wizard-match-count {
     text-align: center;
     padding: var(--fm26-space-md);
-    color: var(--fm26-text-secondary);
+    color: var(--fm26-text-muted);
     font-size: 0.9rem;
 }
 
@@ -643,19 +647,19 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: var(--fm26-bg-card);
+    background: var(--fm26-bg-secondary);
     border: 2px solid var(--fm26-border-default);
 }
 
 .fm26-app .timeline-dot-current {
     background: var(--fm26-accent-primary);
     border-color: var(--fm26-accent-primary);
-    box-shadow: 0 0 12px rgba(5, 226, 126, 0.4);
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
 }
 
 .fm26-app .timeline-content {
     background: var(--fm26-bg-card);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-lg);
     padding: var(--fm26-space-lg);
 }
@@ -681,7 +685,7 @@
 .fm26-app .modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 43, 48, 0.85);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -692,7 +696,7 @@
 
 .fm26-app .modal {
     background: var(--fm26-bg-secondary);
-    border: 1px solid var(--fm26-border-default);
+    border: 2px solid var(--fm26-border-default);
     border-radius: var(--fm26-radius-xl);
     padding: var(--fm26-space-xl);
     max-width: 600px;
