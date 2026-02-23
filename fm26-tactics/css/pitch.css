@@ -1,0 +1,85 @@
+/* Pitch Visualizer */
+.fm26-app .pitch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--fm26-space-sm);
+}
+
+.fm26-app .pitch-container svg {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: var(--fm26-radius-lg);
+    box-shadow: var(--fm26-shadow-card);
+}
+
+.fm26-app .pitch-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--fm26-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Player dot interactions */
+.fm26-app .player-dot {
+    transition: transform var(--fm26-transition-fast);
+}
+
+.fm26-app .player-dot:hover {
+    transform: scale(1.15);
+}
+
+/* Phase Toggle */
+.fm26-app .phase-toggle {
+    display: inline-flex;
+    background: var(--fm26-bg-input);
+    border-radius: var(--fm26-radius-full);
+    padding: 3px;
+    gap: 2px;
+}
+
+.fm26-app .phase-toggle-btn {
+    padding: var(--fm26-space-sm) var(--fm26-space-md);
+    border-radius: var(--fm26-radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--fm26-text-muted);
+    cursor: pointer;
+    transition: all var(--fm26-transition-fast);
+    border: none;
+    background: none;
+}
+
+.fm26-app .phase-toggle-btn:hover {
+    color: var(--fm26-text-secondary);
+}
+
+.fm26-app .phase-toggle-btn.active {
+    background: var(--fm26-bg-card);
+    color: var(--fm26-accent-primary);
+}
+
+/* Dual formation display */
+.fm26-app .dual-formation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--fm26-space-lg);
+    align-items: start;
+}
+
+.fm26-app .dual-formation .pitch-container {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .fm26-app .dual-formation {
+        grid-template-columns: 1fr;
+    }
+
+    .fm26-app .dual-formation .pitch-container {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}

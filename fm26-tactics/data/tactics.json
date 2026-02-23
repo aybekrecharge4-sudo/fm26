@@ -1,0 +1,1811 @@
+{
+  "tactics": [
+    {
+      "slug": "gegenpress-4231",
+      "name": "Klopp's Legacy 4-2-3-1",
+      "author": "TacticalFM",
+      "authorUrl": "",
+      "createdDate": "2026-01-10",
+      "updatedDate": "2026-02-18",
+      "status": "active",
+      "formationFamily": "4-2-3-1",
+      "primaryStyle": "Gegenpress",
+      "styleTags": [
+        "Gegenpress",
+        "High Tempo",
+        "High Press",
+        "Aggressive"
+      ],
+      "intensity": "Very High",
+      "mentality": "Positive",
+      "description": "An aggressive high-pressing system inspired by the gegenpressing philosophy. The team applies intense pressure immediately after losing the ball, aiming to win it back within five seconds in the opponent's half. The double pivot provides a base for the front four to press relentlessly, while the full-backs push high to create width and numerical superiority. Best suited for squads with high stamina, work rate, and determination across all outfield positions. Dominates possession-based sides that struggle under sustained pressure.",
+      "shortDescription": "Relentless high press with a double pivot and aggressive front four.",
+      "squadRequirements": [
+        "High stamina and work rate across all outfield positions",
+        "Fast, aggressive pressing forwards with good off-the-ball movement",
+        "Box-to-Box or Ball-Winning midfielders in the double pivot",
+        "Full-backs comfortable pushing high and defending in space",
+        "Goalkeeper comfortable sweeping behind a high defensive line"
+      ],
+      "budgetTier": "Upper Mid-Table",
+      "knownCounters": [
+        "Low Block",
+        "Route One",
+        "Long Ball Counter-Attack"
+      ],
+      "bestAgainst": [
+        "Possession",
+        "Tiki-Taka",
+        "Build From Back"
+      ],
+      "relatedTactics": [
+        "total-football-433",
+        "tiki-taka-433"
+      ],
+      "glossaryTerms": [
+        "gegenpress",
+        "counter-press",
+        "high-line",
+        "double-pivot"
+      ],
+      "versions": [
+        {
+          "patchVersion": "26.3.0",
+          "patchStatus": "verified",
+          "testedDate": "2026-02-15",
+          "formation": {
+            "inPossession": {
+              "shape": "4-2-3-1",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "DM-L",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DM-R",
+                  "role": "Box-to-Box Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "AML",
+                  "role": "Inside Forward",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "AMC",
+                  "role": "Advanced Playmaker",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "AMR",
+                  "role": "Inside Forward",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "STC",
+                  "role": "Pressing Forward",
+                  "duty": "Attack"
+                }
+              ]
+            },
+            "outOfPossession": {
+              "shape": "4-4-2",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "ML",
+                  "role": "Wide Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Box-to-Box Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MR",
+                  "role": "Wide Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-L",
+                  "role": "Pressing Forward",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "STC-R",
+                  "role": "Pressing Forward",
+                  "duty": "Support"
+                }
+              ]
+            }
+          },
+          "teamInstructions": {
+            "inPossession": [
+              "Shorter Passing",
+              "Higher Tempo",
+              "Play Out of Defence",
+              "Overlap Left",
+              "Overlap Right"
+            ],
+            "outOfPossession": [
+              "Much Higher Defensive Line",
+              "Much Higher Line of Engagement",
+              "More Urgent Pressing",
+              "Use Tighter Marking"
+            ],
+            "transition": [
+              "Counter-Press",
+              "Distribute Quickly"
+            ]
+          },
+          "evidence": [
+            {
+              "type": "standardized-test",
+              "source": "Own Testing",
+              "sourceUrl": "",
+              "matchCount": 380,
+              "context": "English Premier League, Holiday Sim, No Transfers, Man Utd",
+              "stats": {
+                "ppg": 2.31,
+                "winRate": 71,
+                "drawRate": 14,
+                "lossRate": 15,
+                "goalsFor": 89,
+                "goalsAgainst": 34,
+                "goalDifference": 55,
+                "xGFor": 82.4,
+                "xGAgainst": 38.2,
+                "shotsFor": 620,
+                "shotsAgainst": 380,
+                "shotsOnTargetFor": 215,
+                "shotsOnTargetAgainst": 125,
+                "possession": 58,
+                "passCompletion": 84,
+                "setPieceGoalsFor": 12,
+                "setPieceGoalsAgainst": 5
+              },
+              "notes": "Very strong against sides that try to play out from the back. Can be exposed on the counter when both full-backs push high. Fitness concerns in congested fixtures; rotate aggressively."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tiki-taka-433",
+      "name": "Positional Tiki-Taka 4-3-3",
+      "author": "PossessionGuru",
+      "authorUrl": "",
+      "createdDate": "2026-01-05",
+      "updatedDate": "2026-02-20",
+      "status": "active",
+      "formationFamily": "4-3-3",
+      "primaryStyle": "Tiki-Taka",
+      "styleTags": [
+        "Tiki-Taka",
+        "Possession",
+        "Short Passing",
+        "Positional Play"
+      ],
+      "intensity": "Balanced",
+      "mentality": "Balanced",
+      "description": "A patient, possession-oriented system built around positional play and short, incisive passing combinations. The single pivot anchors the midfield while two advanced midfielders create triangles across the pitch. The wide forwards drift inward to overload central areas, while full-backs provide width. Out of possession, the team shifts to a 4-1-4-1 shape with the pivot sitting deep and the wide forwards tracking back. This tactic requires technically gifted players throughout the squad and a goalkeeper comfortable with distribution.",
+      "shortDescription": "Patient possession game with positional triangles and controlled tempo.",
+      "squadRequirements": [
+        "Technically excellent midfielders with high passing and vision",
+        "A dominant deep-lying playmaker or regista as the single pivot",
+        "Intelligent forwards capable of positional interchange",
+        "Full-backs who can retain possession under pressure",
+        "Sweeper-keeper comfortable receiving back passes and distributing"
+      ],
+      "budgetTier": "Top Club",
+      "knownCounters": [
+        "Gegenpress",
+        "High Press",
+        "Direct Counter-Attack"
+      ],
+      "bestAgainst": [
+        "Low Block",
+        "Defensive",
+        "Passive Pressing"
+      ],
+      "relatedTactics": [
+        "gegenpress-4231",
+        "total-football-433"
+      ],
+      "glossaryTerms": [
+        "tiki-taka",
+        "positional-play",
+        "pivot",
+        "half-spaces"
+      ],
+      "versions": [
+        {
+          "patchVersion": "26.3.0",
+          "patchStatus": "verified",
+          "testedDate": "2026-02-12",
+          "formation": {
+            "inPossession": {
+              "shape": "4-3-3",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Ball-Playing Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Ball-Playing Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC",
+                  "role": "Deep-Lying Playmaker",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Mezzala",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Mezzala",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "AML",
+                  "role": "Inside Forward",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "AMR",
+                  "role": "Inverted Winger",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC",
+                  "role": "Deep-Lying Forward",
+                  "duty": "Support"
+                }
+              ]
+            },
+            "outOfPossession": {
+              "shape": "4-1-4-1",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DM",
+                  "role": "Anchor Man",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "ML",
+                  "role": "Wide Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Carrilero",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Carrilero",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MR",
+                  "role": "Wide Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "STC",
+                  "role": "Pressing Forward",
+                  "duty": "Support"
+                }
+              ]
+            }
+          },
+          "teamInstructions": {
+            "inPossession": [
+              "Much Shorter Passing",
+              "Lower Tempo",
+              "Play Out of Defence",
+              "Work Ball into Box"
+            ],
+            "outOfPossession": [
+              "Higher Defensive Line",
+              "Standard Line of Engagement",
+              "Standard Pressing"
+            ],
+            "transition": [
+              "Counter-Press",
+              "Distribute to Playmaker"
+            ]
+          },
+          "evidence": [
+            {
+              "type": "standardized-test",
+              "source": "Own Testing",
+              "sourceUrl": "",
+              "matchCount": 380,
+              "context": "English Premier League, Holiday Sim, No Transfers, Man City",
+              "stats": {
+                "ppg": 2.42,
+                "winRate": 74,
+                "drawRate": 13,
+                "lossRate": 13,
+                "goalsFor": 82,
+                "goalsAgainst": 28,
+                "goalDifference": 54,
+                "xGFor": 78.6,
+                "xGAgainst": 32.1,
+                "shotsFor": 560,
+                "shotsAgainst": 310,
+                "shotsOnTargetFor": 198,
+                "shotsOnTargetAgainst": 98,
+                "possession": 67,
+                "passCompletion": 89,
+                "setPieceGoalsFor": 8,
+                "setPieceGoalsAgainst": 4
+              },
+              "notes": "Dominant possession numbers but can struggle to break down deep, compact defences. Vulnerable to fast transitions if the full-backs are caught high. Works best with elite technical players; drop-off is significant with weaker squads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "route-one-442",
+      "name": "Big Sam's Route One 4-4-2",
+      "author": "DirectPlayFC",
+      "authorUrl": "",
+      "createdDate": "2026-01-20",
+      "updatedDate": "2026-02-16",
+      "status": "active",
+      "formationFamily": "4-4-2",
+      "primaryStyle": "Route One",
+      "styleTags": [
+        "Route One",
+        "Direct",
+        "Long Ball",
+        "High Tempo",
+        "Physical"
+      ],
+      "intensity": "High",
+      "mentality": "Positive",
+      "description": "A direct, no-nonsense approach built around launching long balls to a target man and playing off the second ball. The strike partnership is key: a physical target man to hold up play and win aerial duels, paired with a quick poacher to exploit knock-downs. The flat midfield four maintains discipline and wins the midfield battle through physicality rather than technique. This tactic is ideal for lower-budget sides punching above their weight, where squad quality does not support a possession game.",
+      "shortDescription": "Direct long-ball football with a target man and second-ball exploitation.",
+      "squadRequirements": [
+        "A strong aerial target man with good hold-up play",
+        "A quick, clinical striker to play off the target man",
+        "Physically strong central midfielders who win second balls",
+        "Wide midfielders with good crossing and work rate",
+        "Tall centre-backs comfortable with aerial challenges"
+      ],
+      "budgetTier": "Lower Mid-Table",
+      "knownCounters": [
+        "Possession",
+        "Tiki-Taka",
+        "High Pressing"
+      ],
+      "bestAgainst": [
+        "High Line",
+        "Small Defenders",
+        "Open Play"
+      ],
+      "relatedTactics": [
+        "low-block-442",
+        "catenaccio-532"
+      ],
+      "glossaryTerms": [
+        "route-one",
+        "target-man",
+        "second-ball",
+        "direct-play"
+      ],
+      "versions": [
+        {
+          "patchVersion": "26.3.0",
+          "patchStatus": "verified",
+          "testedDate": "2026-02-10",
+          "formation": {
+            "inPossession": {
+              "shape": "4-4-2",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "ML",
+                  "role": "Winger",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Box-to-Box Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MR",
+                  "role": "Winger",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-L",
+                  "role": "Target Man",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-R",
+                  "role": "Poacher",
+                  "duty": "Attack"
+                }
+              ]
+            },
+            "outOfPossession": {
+              "shape": "4-4-2",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "ML",
+                  "role": "Wide Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Box-to-Box Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MR",
+                  "role": "Wide Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "STC-L",
+                  "role": "Target Man",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-R",
+                  "role": "Pressing Forward",
+                  "duty": "Defend"
+                }
+              ]
+            }
+          },
+          "teamInstructions": {
+            "inPossession": [
+              "More Direct Passing",
+              "Higher Tempo",
+              "Hit Early Crosses",
+              "Route One"
+            ],
+            "outOfPossession": [
+              "Standard Defensive Line",
+              "Standard Line of Engagement",
+              "Standard Pressing"
+            ],
+            "transition": [
+              "Counter-Attack",
+              "Distribute to Target Man"
+            ]
+          },
+          "evidence": [
+            {
+              "type": "standardized-test",
+              "source": "Own Testing",
+              "sourceUrl": "",
+              "matchCount": 380,
+              "context": "English Premier League, Holiday Sim, No Transfers, West Ham",
+              "stats": {
+                "ppg": 1.72,
+                "winRate": 47,
+                "drawRate": 25,
+                "lossRate": 28,
+                "goalsFor": 62,
+                "goalsAgainst": 48,
+                "goalDifference": 14,
+                "xGFor": 58.3,
+                "xGAgainst": 51.7,
+                "shotsFor": 490,
+                "shotsAgainst": 445,
+                "shotsOnTargetFor": 165,
+                "shotsOnTargetAgainst": 152,
+                "possession": 42,
+                "passCompletion": 71,
+                "setPieceGoalsFor": 16,
+                "setPieceGoalsAgainst": 9
+              },
+              "notes": "Effective at neutralising stronger sides and punishing them on the break. Set-piece goals are a major source of output. Pass completion is low by design. Works best when the target man has elite heading and strength attributes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "catenaccio-532",
+      "name": "Modern Catenaccio 5-3-2",
+      "author": "DefensiveMaster",
+      "authorUrl": "",
+      "createdDate": "2026-01-12",
+      "updatedDate": "2026-02-19",
+      "status": "active",
+      "formationFamily": "5-3-2",
+      "primaryStyle": "Catenaccio",
+      "styleTags": [
+        "Catenaccio",
+        "Defensive",
+        "Counter-Attack",
+        "Compact",
+        "Low Block"
+      ],
+      "intensity": "Low",
+      "mentality": "Defensive",
+      "description": "A modernised take on the classic Italian Catenaccio, prioritising defensive solidity above all else. Three centre-backs provide layered coverage with one acting as a sweeper, while the wing-backs tuck in to form a back five out of possession. The midfield trio sits deep to clog passing lanes and stifle opposition build-up. On the counter, the wing-backs burst forward and the two strikers provide direct outlets. This system is designed for underdogs facing superior opposition, trading possession for defensive resilience and clinical counter-attacks.",
+      "shortDescription": "Ultra-defensive three-centre-back system with lethal counter-attacks.",
+      "squadRequirements": [
+        "Three disciplined centre-backs with good positioning and concentration",
+        "Wing-backs with the stamina to cover the entire flank both ways",
+        "A midfield anchor to protect the back three",
+        "A quick striker to exploit space on the counter-attack",
+        "Players with high teamwork, work rate, and defensive attributes"
+      ],
+      "budgetTier": "Relegation Fighter",
+      "knownCounters": [
+        "Width Overload",
+        "Wing Play",
+        "Sustained Possession"
+      ],
+      "bestAgainst": [
+        "High Line",
+        "Attacking",
+        "Gegenpress"
+      ],
+      "relatedTactics": [
+        "low-block-442",
+        "route-one-442"
+      ],
+      "glossaryTerms": [
+        "catenaccio",
+        "sweeper",
+        "counter-attack",
+        "low-block"
+      ],
+      "versions": [
+        {
+          "patchVersion": "26.3.0",
+          "patchStatus": "verified",
+          "testedDate": "2026-02-08",
+          "formation": {
+            "inPossession": {
+              "shape": "5-3-2",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "WBL",
+                  "role": "Wing-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC",
+                  "role": "Libero",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "WBR",
+                  "role": "Wing-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Carrilero",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC",
+                  "role": "Anchor Man",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Carrilero",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-L",
+                  "role": "Deep-Lying Forward",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-R",
+                  "role": "Advanced Forward",
+                  "duty": "Attack"
+                }
+              ]
+            },
+            "outOfPossession": {
+              "shape": "5-3-2",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "WBL",
+                  "role": "Wing-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "WBR",
+                  "role": "Wing-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Carrilero",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC",
+                  "role": "Anchor Man",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Carrilero",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "STC-L",
+                  "role": "Defensive Forward",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "STC-R",
+                  "role": "Pressing Forward",
+                  "duty": "Defend"
+                }
+              ]
+            }
+          },
+          "teamInstructions": {
+            "inPossession": [
+              "Standard Passing",
+              "Lower Tempo",
+              "Be More Disciplined"
+            ],
+            "outOfPossession": [
+              "Much Deeper Defensive Line",
+              "Much Deeper Line of Engagement",
+              "Less Urgent Pressing",
+              "Use Tighter Marking"
+            ],
+            "transition": [
+              "Counter-Attack",
+              "Distribute to Full-Backs"
+            ]
+          },
+          "evidence": [
+            {
+              "type": "standardized-test",
+              "source": "Own Testing",
+              "sourceUrl": "",
+              "matchCount": 380,
+              "context": "English Premier League, Holiday Sim, No Transfers, Ipswich Town",
+              "stats": {
+                "ppg": 1.38,
+                "winRate": 34,
+                "drawRate": 32,
+                "lossRate": 34,
+                "goalsFor": 38,
+                "goalsAgainst": 41,
+                "goalDifference": -3,
+                "xGFor": 35.2,
+                "xGAgainst": 48.8,
+                "shotsFor": 340,
+                "shotsAgainst": 520,
+                "shotsOnTargetFor": 118,
+                "shotsOnTargetAgainst": 168,
+                "possession": 36,
+                "passCompletion": 74,
+                "setPieceGoalsFor": 10,
+                "setPieceGoalsAgainst": 8
+              },
+              "notes": "Outperforms xG significantly on the defensive end due to shot quality conceded being poor. Keeps Ipswich competitive in the top flight despite limited squad quality. Draw rate is very high. Struggles to create volume but clinical finishing makes a big difference."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fluid-counter-4141",
+      "name": "Fluid Counter-Attack 4-1-4-1",
+      "author": "TransitionKing",
+      "authorUrl": "",
+      "createdDate": "2026-01-18",
+      "updatedDate": "2026-02-14",
+      "status": "active",
+      "formationFamily": "4-1-4-1",
+      "primaryStyle": "Counter-Attack",
+      "styleTags": [
+        "Counter-Attack",
+        "Transition",
+        "Balanced",
+        "Fluid"
+      ],
+      "intensity": "Balanced",
+      "mentality": "Balanced",
+      "description": "A balanced, transition-focused system that excels at absorbing pressure and striking quickly on the break. The lone defensive midfielder screens the back four while four midfielders provide both defensive coverage and attacking thrust. In possession, the shape opens up with the AMC pushing forward and wide players drifting inward. Out of possession, the team drops into a compact 4-4-1-1 with the AMC becoming a second pressing layer ahead of the midfield four. Designed for sides who face more possession-dominant opponents regularly.",
+      "shortDescription": "Balanced system built around rapid transitions and fluid midfield movement.",
+      "squadRequirements": [
+        "A disciplined defensive midfielder with good anticipation and positioning",
+        "Pacy wide players who can transition from defence to attack quickly",
+        "An intelligent AMC who can press and create in equal measure",
+        "Full-backs comfortable in a disciplined defensive role",
+        "A mobile lone striker who can hold the ball up and run the channels"
+      ],
+      "budgetTier": "Mid-Table",
+      "knownCounters": [
+        "Wing Play",
+        "3-at-the-Back Overloads",
+        "Wide Overlap"
+      ],
+      "bestAgainst": [
+        "Possession",
+        "High Line",
+        "Attacking Formations"
+      ],
+      "relatedTactics": [
+        "catenaccio-532",
+        "low-block-442",
+        "gegenpress-4231"
+      ],
+      "glossaryTerms": [
+        "counter-attack",
+        "transition",
+        "compact-shape",
+        "lone-pivot"
+      ],
+      "versions": [
+        {
+          "patchVersion": "26.3.0",
+          "patchStatus": "verified",
+          "testedDate": "2026-02-11",
+          "formation": {
+            "inPossession": {
+              "shape": "4-1-4-1",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "DM",
+                  "role": "Deep-Lying Playmaker",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "ML",
+                  "role": "Winger",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Mezzala",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Box-to-Box Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MR",
+                  "role": "Inverted Winger",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "STC",
+                  "role": "Complete Forward",
+                  "duty": "Support"
+                }
+              ]
+            },
+            "outOfPossession": {
+              "shape": "4-4-1-1",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "ML",
+                  "role": "Wide Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Carrilero",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MR",
+                  "role": "Wide Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "AMC",
+                  "role": "Shadow Striker",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "STC",
+                  "role": "Pressing Forward",
+                  "duty": "Support"
+                }
+              ]
+            }
+          },
+          "teamInstructions": {
+            "inPossession": [
+              "Standard Passing",
+              "Standard Tempo",
+              "Be More Expressive"
+            ],
+            "outOfPossession": [
+              "Standard Defensive Line",
+              "Deeper Line of Engagement",
+              "Standard Pressing"
+            ],
+            "transition": [
+              "Counter-Attack",
+              "Distribute Quickly"
+            ]
+          },
+          "evidence": [
+            {
+              "type": "standardized-test",
+              "source": "Own Testing",
+              "sourceUrl": "",
+              "matchCount": 380,
+              "context": "English Premier League, Holiday Sim, No Transfers, Wolves",
+              "stats": {
+                "ppg": 1.82,
+                "winRate": 50,
+                "drawRate": 24,
+                "lossRate": 26,
+                "goalsFor": 58,
+                "goalsAgainst": 42,
+                "goalDifference": 16,
+                "xGFor": 55.1,
+                "xGAgainst": 45.6,
+                "shotsFor": 450,
+                "shotsAgainst": 465,
+                "shotsOnTargetFor": 162,
+                "shotsOnTargetAgainst": 148,
+                "possession": 45,
+                "passCompletion": 79,
+                "setPieceGoalsFor": 11,
+                "setPieceGoalsAgainst": 7
+              },
+              "notes": "Very balanced profile. Concedes fewer shots on target than expected despite lower possession. Quality of chances created is high, with good xG conversion. Most effective against teams that commit numbers forward. The AMC transition between phases is the tactical linchpin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wing-play-3421",
+      "name": "Dynamic Wing Play 3-4-2-1",
+      "author": "WideOverload",
+      "authorUrl": "",
+      "createdDate": "2026-01-25",
+      "updatedDate": "2026-02-17",
+      "status": "active",
+      "formationFamily": "3-4-2-1",
+      "primaryStyle": "Wing Play",
+      "styleTags": [
+        "Wing Play",
+        "Overlapping",
+        "Wide",
+        "Attacking",
+        "Three at the Back"
+      ],
+      "intensity": "High",
+      "mentality": "Attacking",
+      "description": "An attacking system that generates width through overlapping wing-backs in a three-at-the-back framework. The two number tens drift into half-spaces to create overloads, while the wing-backs provide natural width and crossing opportunities. The double pivot holds the midfield and covers for the marauding wing-backs. Out of possession, the wing-backs drop into a back five, forming a solid 5-4-1 shape. Requires exceptional wing-backs with elite stamina and crossing ability to function properly.",
+      "shortDescription": "Width-focused 3-at-the-back with overlapping wing-backs and half-space overloads.",
+      "squadRequirements": [
+        "Elite wing-backs with pace, stamina, crossing, and defensive ability",
+        "Three centre-backs comfortable in a wider defensive line",
+        "Creative number tens who can operate in half-spaces",
+        "A double pivot providing both protection and distribution",
+        "A mobile striker who can link play and finish from crosses"
+      ],
+      "budgetTier": "Upper Mid-Table",
+      "knownCounters": [
+        "Counter-Attack through the middle",
+        "3v2 central overloads",
+        "Pacy Inside Forwards"
+      ],
+      "bestAgainst": [
+        "Narrow Formations",
+        "4-4-2",
+        "Low Block"
+      ],
+      "relatedTactics": [
+        "total-football-433",
+        "gegenpress-4231"
+      ],
+      "glossaryTerms": [
+        "wing-play",
+        "overlap",
+        "half-spaces",
+        "inverted-wing-back"
+      ],
+      "versions": [
+        {
+          "patchVersion": "26.3.0",
+          "patchStatus": "verified",
+          "testedDate": "2026-02-13",
+          "formation": {
+            "inPossession": {
+              "shape": "3-4-2-1",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Ball-Playing Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Ball-Playing Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "WBL",
+                  "role": "Wing-Back",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Box-to-Box Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Deep-Lying Playmaker",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "WBR",
+                  "role": "Wing-Back",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "AMC-L",
+                  "role": "Advanced Playmaker",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "AMC-R",
+                  "role": "Shadow Striker",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "STC",
+                  "role": "Complete Forward",
+                  "duty": "Attack"
+                }
+              ]
+            },
+            "outOfPossession": {
+              "shape": "5-3-2",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "WBL",
+                  "role": "Wing-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "WBR",
+                  "role": "Wing-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC",
+                  "role": "Central Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "STC-L",
+                  "role": "Pressing Forward",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-R",
+                  "role": "Defensive Forward",
+                  "duty": "Defend"
+                }
+              ]
+            }
+          },
+          "teamInstructions": {
+            "inPossession": [
+              "Shorter Passing",
+              "Standard Tempo",
+              "Overlap Left",
+              "Overlap Right",
+              "Focus Play Down Flanks"
+            ],
+            "outOfPossession": [
+              "Higher Defensive Line",
+              "Standard Line of Engagement",
+              "More Urgent Pressing"
+            ],
+            "transition": [
+              "Counter-Press",
+              "Distribute to Full-Backs"
+            ]
+          },
+          "evidence": [
+            {
+              "type": "standardized-test",
+              "source": "Own Testing",
+              "sourceUrl": "",
+              "matchCount": 380,
+              "context": "English Premier League, Holiday Sim, No Transfers, Brighton",
+              "stats": {
+                "ppg": 2.05,
+                "winRate": 58,
+                "drawRate": 21,
+                "lossRate": 21,
+                "goalsFor": 74,
+                "goalsAgainst": 45,
+                "goalDifference": 29,
+                "xGFor": 71.8,
+                "xGAgainst": 47.3,
+                "shotsFor": 545,
+                "shotsAgainst": 420,
+                "shotsOnTargetFor": 192,
+                "shotsOnTargetAgainst": 140,
+                "possession": 55,
+                "passCompletion": 82,
+                "setPieceGoalsFor": 14,
+                "setPieceGoalsAgainst": 7
+              },
+              "notes": "Generates a high volume of crossing opportunities and set pieces. Wing-back fitness is critical; performance drops sharply when backups are used. Vulnerable to quick central transitions when wing-backs are caught upfield. Set-piece goals benefit from the three tall centre-backs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "total-football-433",
+      "name": "Total Football 4-3-3",
+      "author": "CruyffDisciple",
+      "authorUrl": "",
+      "createdDate": "2026-01-08",
+      "updatedDate": "2026-02-21",
+      "status": "active",
+      "formationFamily": "4-3-3",
+      "primaryStyle": "Total Football",
+      "styleTags": [
+        "Total Football",
+        "Versatile",
+        "High Creativity",
+        "Positional Interchange",
+        "Fluid"
+      ],
+      "intensity": "Very High",
+      "mentality": "Attacking",
+      "description": "A fluid, high-intensity system inspired by the total football philosophy where every outfield player is expected to interchange positions fluidly. The Regista orchestrates from deep, the full-backs invert into midfield to create central overloads, and the front three rotate constantly. Out of possession, the team immediately presses with extreme intensity, mirroring the gegenpress but with more positional chaos. This system demands the highest-quality, most versatile players available; every outfield player needs to be comfortable in multiple positions. The reward is an utterly unpredictable, creatively devastating attacking style.",
+      "shortDescription": "Fluid total football with constant positional interchange and creative freedom.",
+      "squadRequirements": [
+        "Highly versatile players comfortable in multiple positions",
+        "A Regista with elite vision, passing, and composure",
+        "Full-backs capable of inverting into central midfield",
+        "Technically brilliant forwards who interchange fluidly",
+        "High mental attributes across the squad: decisions, teamwork, off the ball",
+        "Goalkeeper comfortable as a sweeper-keeper"
+      ],
+      "budgetTier": "Top Club",
+      "knownCounters": [
+        "Disciplined Low Block",
+        "Ultra-Defensive Counter",
+        "Physical Midfields"
+      ],
+      "bestAgainst": [
+        "Standard Formations",
+        "Man-Marking Systems",
+        "Rigid Defences"
+      ],
+      "relatedTactics": [
+        "tiki-taka-433",
+        "gegenpress-4231",
+        "wing-play-3421"
+      ],
+      "glossaryTerms": [
+        "total-football",
+        "positional-interchange",
+        "regista",
+        "inverted-full-back"
+      ],
+      "versions": [
+        {
+          "patchVersion": "26.3.0",
+          "patchStatus": "verified",
+          "testedDate": "2026-02-18",
+          "formation": {
+            "inPossession": {
+              "shape": "4-3-3",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Inverted Wing-Back",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Ball-Playing Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Ball-Playing Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Inverted Wing-Back",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC",
+                  "role": "Regista",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Mezzala",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Carrilero",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "AML",
+                  "role": "Inside Forward",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "AMR",
+                  "role": "Inverted Winger",
+                  "duty": "Attack"
+                },
+                {
+                  "slotId": "STC",
+                  "role": "Pressing Forward",
+                  "duty": "Attack"
+                }
+              ]
+            },
+            "outOfPossession": {
+              "shape": "4-3-3",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC",
+                  "role": "Anchor Man",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "AML",
+                  "role": "Inside Forward",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "AMR",
+                  "role": "Inside Forward",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "STC",
+                  "role": "Pressing Forward",
+                  "duty": "Attack"
+                }
+              ]
+            }
+          },
+          "teamInstructions": {
+            "inPossession": [
+              "Shorter Passing",
+              "Higher Tempo",
+              "Be More Expressive",
+              "Play Out of Defence",
+              "Work Ball into Box"
+            ],
+            "outOfPossession": [
+              "Much Higher Defensive Line",
+              "Much Higher Line of Engagement",
+              "More Urgent Pressing",
+              "Use Offside Trap"
+            ],
+            "transition": [
+              "Counter-Press",
+              "Distribute to Playmaker"
+            ]
+          },
+          "evidence": [
+            {
+              "type": "standardized-test",
+              "source": "Own Testing",
+              "sourceUrl": "",
+              "matchCount": 380,
+              "context": "English Premier League, Holiday Sim, No Transfers, Arsenal",
+              "stats": {
+                "ppg": 2.52,
+                "winRate": 78,
+                "drawRate": 11,
+                "lossRate": 11,
+                "goalsFor": 95,
+                "goalsAgainst": 32,
+                "goalDifference": 63,
+                "xGFor": 88.7,
+                "xGAgainst": 35.4,
+                "shotsFor": 650,
+                "shotsAgainst": 350,
+                "shotsOnTargetFor": 228,
+                "shotsOnTargetAgainst": 112,
+                "possession": 62,
+                "passCompletion": 86,
+                "setPieceGoalsFor": 11,
+                "setPieceGoalsAgainst": 4
+              },
+              "notes": "The highest-performing tactic in testing when used with elite squads. The gap between this and weaker squads is enormous; do not use with lower-league sides. Fitness management is critical. The positional interchange creates confusion but requires high mental stats to execute. Title-winning calibre with the right players."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "low-block-442",
+      "name": "Resolute Low Block 4-4-2",
+      "author": "ParkTheBus",
+      "authorUrl": "",
+      "createdDate": "2026-01-22",
+      "updatedDate": "2026-02-15",
+      "status": "active",
+      "formationFamily": "4-4-2",
+      "primaryStyle": "Low Block",
+      "styleTags": [
+        "Low Block",
+        "Defensive",
+        "Compact",
+        "Counter-Attack",
+        "Disciplined"
+      ],
+      "intensity": "Very Low",
+      "mentality": "Very Defensive",
+      "description": "The ultimate bus-parking setup. Two banks of four sit deep and narrow, compressing space in the defensive third and forcing opponents wide into low-percentage crossing positions. The team barely presses, conserving energy and maintaining shape at all costs. The two strikers stay high as outlets for rare counter-attacks, with one dropping to collect long balls and the other stretching the defensive line with runs in behind. This is a survival tactic, purpose-built for keeping scores low against vastly superior sides. Not pretty, but brutally effective at grinding out results.",
+      "shortDescription": "Deep, compact defensive block with two banks of four and rare counter-attacks.",
+      "squadRequirements": [
+        "Disciplined, positionally aware defenders with high concentration",
+        "Central midfielders with exceptional work rate and stamina",
+        "Wide midfielders willing to sacrifice attacking contribution for defensive duties",
+        "At least one quick striker to provide a counter-attacking outlet",
+        "A commanding goalkeeper who organises the defence"
+      ],
+      "budgetTier": "Relegation Fighter",
+      "knownCounters": [
+        "Sustained Wide Overloads",
+        "Set Piece Specialists",
+        "Individual Brilliance"
+      ],
+      "bestAgainst": [
+        "Gegenpress",
+        "High Tempo",
+        "Attacking Formations",
+        "Possession"
+      ],
+      "relatedTactics": [
+        "catenaccio-532",
+        "route-one-442",
+        "fluid-counter-4141"
+      ],
+      "glossaryTerms": [
+        "low-block",
+        "parking-the-bus",
+        "banks-of-four",
+        "deep-defence"
+      ],
+      "versions": [
+        {
+          "patchVersion": "26.3.0",
+          "patchStatus": "verified",
+          "testedDate": "2026-02-09",
+          "formation": {
+            "inPossession": {
+              "shape": "4-4-2",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "ML",
+                  "role": "Wide Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MR",
+                  "role": "Wide Midfielder",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-L",
+                  "role": "Target Man",
+                  "duty": "Support"
+                },
+                {
+                  "slotId": "STC-R",
+                  "role": "Poacher",
+                  "duty": "Attack"
+                }
+              ]
+            },
+            "outOfPossession": {
+              "shape": "4-4-2",
+              "positions": [
+                {
+                  "slotId": "GK",
+                  "role": "Goalkeeper",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DL",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-L",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DC-R",
+                  "role": "Central Defender",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "DR",
+                  "role": "Full-Back",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "ML",
+                  "role": "Wide Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-L",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MC-R",
+                  "role": "Ball-Winning Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "MR",
+                  "role": "Wide Midfielder",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "STC-L",
+                  "role": "Defensive Forward",
+                  "duty": "Defend"
+                },
+                {
+                  "slotId": "STC-R",
+                  "role": "Poacher",
+                  "duty": "Attack"
+                }
+              ]
+            }
+          },
+          "teamInstructions": {
+            "inPossession": [
+              "More Direct Passing",
+              "Lower Tempo",
+              "Be More Disciplined"
+            ],
+            "outOfPossession": [
+              "Much Deeper Defensive Line",
+              "Much Deeper Line of Engagement",
+              "Much Less Urgent Pressing",
+              "Use Tighter Marking",
+              "Get Stuck In"
+            ],
+            "transition": [
+              "Counter-Attack",
+              "Distribute Quickly"
+            ]
+          },
+          "evidence": [
+            {
+              "type": "standardized-test",
+              "source": "Own Testing",
+              "sourceUrl": "",
+              "matchCount": 380,
+              "context": "English Premier League, Holiday Sim, No Transfers, Southampton",
+              "stats": {
+                "ppg": 1.25,
+                "winRate": 30,
+                "drawRate": 34,
+                "lossRate": 36,
+                "goalsFor": 32,
+                "goalsAgainst": 44,
+                "goalDifference": -12,
+                "xGFor": 28.9,
+                "xGAgainst": 55.3,
+                "shotsFor": 295,
+                "shotsAgainst": 580,
+                "shotsOnTargetFor": 102,
+                "shotsOnTargetAgainst": 185,
+                "possession": 35,
+                "passCompletion": 68,
+                "setPieceGoalsFor": 9,
+                "setPieceGoalsAgainst": 11
+              },
+              "notes": "Massively outperforms xGA due to the quality of chances conceded being very low (mostly long-range efforts and wide crosses). The PPG is modest but keeps a relegation-calibre squad competitive. High draw rate is the backbone of survival. Extremely boring to watch but effective at grinding points."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

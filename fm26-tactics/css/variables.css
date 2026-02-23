@@ -1,0 +1,77 @@
+.fm26-app {
+    /* Background — Recharge.com dark teal palette */
+    --fm26-bg-primary: #00373D;
+    --fm26-bg-secondary: #002B30;
+    --fm26-bg-card: #004046;
+    --fm26-bg-card-hover: #00515A;
+    --fm26-bg-input: #00272C;
+    --fm26-bg-pitch: #1a472a;
+    --fm26-bg-overlay: rgba(0, 43, 48, 0.85);
+
+    /* Text */
+    --fm26-text-primary: #F4F6F6;
+    --fm26-text-secondary: #9DAFB3;
+    --fm26-text-muted: #5D7175;
+    --fm26-text-inverse: #00373D;
+
+    /* Accent — Recharge.com CTA green + interaction blue */
+    --fm26-accent-primary: #05E27E;
+    --fm26-accent-primary-hover: #04AF61;
+    --fm26-accent-secondary: #006BE5;
+    --fm26-accent-warning: #f59e0b;
+    --fm26-accent-danger: #ef4444;
+    --fm26-accent-gold: #fbbf24;
+
+    /* Gradient */
+    --fm26-gradient-primary: linear-gradient(135deg, #07F288, #99EEFF);
+
+    /* Duty Colors */
+    --fm26-duty-attack: #ef4444;
+    --fm26-duty-support: #eab308;
+    --fm26-duty-defend: #3b82f6;
+
+    /* Patch Status */
+    --fm26-status-verified: #05E27E;
+    --fm26-status-outdated: #f59e0b;
+    --fm26-status-untested: #5D7175;
+    --fm26-status-broken: #ef4444;
+
+    /* Borders */
+    --fm26-border-default: #0A4A50;
+    --fm26-border-hover: #1A6A70;
+    --fm26-border-accent: #05E27E;
+
+    /* Radius */
+    --fm26-radius-sm: 8px;
+    --fm26-radius-md: 12px;
+    --fm26-radius-lg: 16px;
+    --fm26-radius-xl: 20px;
+    --fm26-radius-full: 9999px;
+
+    /* Shadows */
+    --fm26-shadow-card: 0 2px 8px rgba(0, 20, 22, 0.4);
+    --fm26-shadow-card-hover: 0 8px 24px rgba(0, 20, 22, 0.6);
+    --fm26-shadow-dropdown: 0 4px 16px rgba(0, 20, 22, 0.7);
+
+    /* Fonts */
+    --fm26-font-primary: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    --fm26-font-display: 'Bebas Neue', 'DM Sans', sans-serif;
+
+    /* Sizing */
+    --fm26-max-width: 1280px;
+    --fm26-sidebar-width: 280px;
+    --fm26-header-height: 64px;
+
+    /* Spacing */
+    --fm26-space-xs: 4px;
+    --fm26-space-sm: 8px;
+    --fm26-space-md: 16px;
+    --fm26-space-lg: 24px;
+    --fm26-space-xl: 32px;
+    --fm26-space-2xl: 48px;
+
+    /* Transitions */
+    --fm26-transition-fast: 150ms ease;
+    --fm26-transition-normal: 250ms ease;
+    --fm26-transition-slow: 400ms ease;
+}
