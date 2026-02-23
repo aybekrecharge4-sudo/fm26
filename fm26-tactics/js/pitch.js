@@ -46,7 +46,7 @@ const PitchVisualizer = (() => {
             ));
         }
 
-        const lineColor = 'rgba(255,255,255,0.5)';
+        const lineColor = 'rgba(255,255,255,0.45)';
         const lineW = 2;
 
         // Pitch outline
@@ -61,13 +61,9 @@ const PitchVisualizer = (() => {
         svg.appendChild(makeCircle(PITCH_W / 2, midY, 3, lineColor));
 
         // --- Top (attacking) end ---
-        // Penalty area
         svg.appendChild(makeRect(178, MARGIN, 324, 165, null, lineColor, 0, lineW));
-        // Goal area
         svg.appendChild(makeRect(250, MARGIN, 180, 55, null, lineColor, 0, lineW));
-        // Penalty spot
         svg.appendChild(makeCircle(PITCH_W / 2, MARGIN + 120, 3, lineColor));
-        // Penalty arc
         svg.appendChild(makeArc(PITCH_W / 2, MARGIN + 165, 91.5, 0.65, 2.49, lineColor, lineW));
 
         // --- Bottom (GK) end ---
@@ -85,6 +81,11 @@ const PitchVisualizer = (() => {
 
         // Player positions
         if (positions && positions.length > 0) {
+            const dotR = compact ? 20 : 24;
+            const labelSize = compact ? 12 : 14;
+            const roleSize = compact ? 11 : 13;
+            const dutySize = compact ? 10 : 11;
+
             positions.forEach(pos => {
                 const px = MARGIN + (pos.x / 100) * FIELD_W;
                 const py = MARGIN + (pos.y / 100) * FIELD_H;
@@ -97,29 +98,43 @@ const PitchVisualizer = (() => {
                     g.dataset.slot = pos.slotId;
                 }
 
-                // Glow ring
-                const glow = makeCircle(px, py, compact ? 18 : 22, null, color, 2);
-                glow.setAttribute('opacity', '0.3');
+                // Outer glow
+                const glow = makeCircle(px, py, dotR + 6, null, color, 2.5);
+                glow.setAttribute('opacity', '0.35');
                 g.appendChild(glow);
 
-                // Main dot
-                g.appendChild(makeCircle(px, py, compact ? 14 : 16, color, '#000', 1.5));
+                // Main dot with solid fill
+                g.appendChild(makeCircle(px, py, dotR, color, 'rgba(0,0,0,0.4)', 2));
 
-                // Position label inside dot
-                const posLabel = makeText(px, py + 1, pos.label || '', '#000', compact ? 9 : 11, '700');
+                // Position label (e.g. "GK", "DC", "MC") — white, bold, inside dot
+                const posLabel = makeText(px, py + (labelSize * 0.35), pos.label || '', '#fff', labelSize, '800');
+                posLabel.setAttribute('stroke', 'rgba(0,0,0,0.5)');
+                posLabel.setAttribute('stroke-width', '0.5');
                 g.appendChild(posLabel);
 
-                // Role label below
+                // Role label below dot — on a dark pill background for readability
                 if (showRoles && pos.role && !compact) {
-                    const roleText = makeText(px, py + 30, truncRole(pos.role), '#fff', 9, '500');
-                    roleText.setAttribute('opacity', '0.9');
+                    const roleStr = truncRole(pos.role);
+                    const roleBgW = Math.max(roleStr.length * 8.5, 50);
+                    const roleBgH = 22;
+                    const roleY = py + dotR + 14;
+
+                    // Dark background pill
+                    const bg = makeRect(px - roleBgW / 2, roleY - roleBgH / 2 - 2, roleBgW, roleBgH, 'rgba(0,0,0,0.7)', null, 6);
+                    g.appendChild(bg);
+
+                    // Role text
+                    const roleText = makeText(px, roleY + 4, roleStr, '#ffffff', roleSize, '600');
                     g.appendChild(roleText);
                 }
 
                 // Duty letter below role
                 if (showDuties && pos.duty && !compact) {
-                    const yOff = showRoles && pos.role ? 42 : 30;
-                    const dutyText = makeText(px, py + yOff, `(${pos.duty[0]})`, color, 8, '700');
+                    const yOff = showRoles && pos.role ? (dotR + 36) : (dotR + 14);
+                    const dutyChar = pos.duty[0]; // A, S, or D
+                    const dutyText = makeText(px, py + yOff, `(${dutyChar})`, color, dutySize, '700');
+                    dutyText.setAttribute('stroke', 'rgba(0,0,0,0.4)');
+                    dutyText.setAttribute('stroke-width', '0.3');
                     g.appendChild(dutyText);
                 }
 
@@ -127,11 +142,11 @@ const PitchVisualizer = (() => {
             });
         }
 
-        // Phase label
+        // Phase label banner at top
         const phaseLabel = phase === 'inPossession' ? 'IN POSSESSION' : 'OUT OF POSSESSION';
-        const phaseBgW = 200;
-        svg.appendChild(makeRect((PITCH_W - phaseBgW) / 2, 6, phaseBgW, 26, 'rgba(0,0,0,0.6)', null, 6));
-        svg.appendChild(makeText(PITCH_W / 2, 24, phaseLabel, '#fff', 11, '700'));
+        const phaseBgW = 240;
+        svg.appendChild(makeRect((PITCH_W - phaseBgW) / 2, 4, phaseBgW, 30, 'rgba(0,0,0,0.7)', null, 8));
+        svg.appendChild(makeText(PITCH_W / 2, 25, phaseLabel, '#ffffff', 13, '700'));
 
         container.innerHTML = '';
         container.appendChild(svg);
@@ -157,7 +172,7 @@ const PitchVisualizer = (() => {
         });
     }
 
-    // Render dual formation (IP + OOP)
+    // Render dual formation (IP + OOP) — desktop only
     function renderDualFormation(containerId, version, meta) {
         const container = document.getElementById(containerId);
         if (!container || !version) return;
@@ -180,13 +195,44 @@ const PitchVisualizer = (() => {
                     <div id="${containerId}-oop"></div>
                 </div>
             </div>
+            <div class="mobile-formation">
+                <div class="pitch-container">
+                    <div class="phase-toggle" id="${containerId}-mob-toggle">
+                        <button class="phase-toggle-btn active" data-phase="inPossession">In Possession</button>
+                        <button class="phase-toggle-btn" data-phase="outOfPossession">Out of Possession</button>
+                    </div>
+                    <span class="pitch-label" id="${containerId}-mob-label">${ipShape}</span>
+                    <div id="${containerId}-mob-pitch"></div>
+                </div>
+            </div>
         `;
 
+        // Desktop: render both
         createPitchSVG(`${containerId}-ip`, ipPositions, { phase: 'inPossession' });
         createPitchSVG(`${containerId}-oop`, oopPositions, { phase: 'outOfPossession' });
+
+        // Mobile: render toggle version
+        createPitchSVG(`${containerId}-mob-pitch`, ipPositions, { phase: 'inPossession' });
+
+        // Bind mobile toggle
+        const toggle = document.getElementById(`${containerId}-mob-toggle`);
+        if (toggle) {
+            toggle.querySelectorAll('.phase-toggle-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    toggle.querySelectorAll('.phase-toggle-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const phase = btn.dataset.phase;
+                    const data = phase === 'inPossession' ? version.formation?.inPossession : version.formation?.outOfPossession;
+                    const pos = formationToPositions(data, formations);
+                    createPitchSVG(`${containerId}-mob-pitch`, pos, { phase });
+                    const label = document.getElementById(`${containerId}-mob-label`);
+                    if (label) label.textContent = data?.shape || 'N/A';
+                });
+            });
+        }
     }
 
-    // Render single formation with phase toggle (for mobile / compact views)
+    // Render single formation with phase toggle (standalone use)
     function renderToggleFormation(containerId, version, meta) {
         const container = document.getElementById(containerId);
         if (!container || !version) return;
@@ -218,7 +264,6 @@ const PitchVisualizer = (() => {
             </div>
         `;
 
-        // Bind toggle
         container.querySelectorAll('.phase-toggle-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 currentPhase = btn.dataset.phase;
@@ -233,8 +278,6 @@ const PitchVisualizer = (() => {
 
     // Truncate long role names
     function truncRole(role) {
-        if (role.length <= 18) return role;
-        // Common abbreviations
         const abbr = {
             'Ball-Playing Defender': 'BPD',
             'Central Defender': 'CD',
@@ -253,9 +296,24 @@ const PitchVisualizer = (() => {
             'Defensive Forward': 'DF',
             'Target Man': 'TM',
             'Inverted Wing-Back': 'IWB',
-            'Central Midfielder': 'CM'
+            'Central Midfielder': 'CM',
+            'Wing-Back': 'WB',
+            'Full-Back': 'FB',
+            'Anchor Man': 'ANC',
+            'Mezzala': 'MEZ',
+            'Trequartista': 'TRQ',
+            'Regista': 'REG',
+            'Segundo Volante': 'VOL',
+            'Roaming Playmaker': 'RPM',
+            'Defensive Midfielder': 'DM',
+            'Libero': 'LIB',
+            'No-Nonsense CB': 'NNCB',
+            'Wide Centre-Back': 'WCB',
+            'Complete Wing-Back': 'CWB'
         };
-        return abbr[role] || role.substring(0, 16) + '...';
+        if (abbr[role]) return abbr[role];
+        if (role.length <= 12) return role;
+        return role.substring(0, 10) + '..';
     }
 
     // --- SVG Helpers ---
@@ -315,7 +373,7 @@ const PitchVisualizer = (() => {
         t.setAttribute('font-size', size);
         t.setAttribute('font-weight', weight || 'normal');
         t.setAttribute('text-anchor', 'middle');
-        t.setAttribute('font-family', "'Inter', system-ui, sans-serif");
+        t.setAttribute('font-family', "'DM Sans', 'Inter', system-ui, sans-serif");
         t.textContent = content;
         return t;
     }
