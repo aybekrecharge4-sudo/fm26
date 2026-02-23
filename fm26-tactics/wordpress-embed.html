@@ -1,0 +1,74 @@
+<!--
+  FM26 Tactics Resource Center — WordPress Embed
+
+  INSTRUCTIONS:
+  1. In WordPress editor, add a "Custom HTML" block
+  2. Paste this entire file contents into it
+  3. Publish/update the page
+
+  DATA SOURCE: GitHub repo → jsdelivr CDN
+  To update tactics data, edit the JSON files in your GitHub repo.
+  Changes appear on your site within ~15 minutes (jsdelivr cache).
+-->
+
+<!-- FM26 Namespaced CSS (won't affect your WordPress theme) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/css/variables.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/css/base.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/css/layout.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/css/components.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/css/pitch.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/css/pages.css">
+
+<!-- App Shell -->
+<div class="fm26-app" id="fm26-app">
+  <div class="fm26-inner">
+    <header class="app-header">
+      <div class="header-inner">
+        <a href="#library" class="logo">
+          <span class="logo-icon">&#9917;</span>
+          <span class="logo-text">FM26 Tactics</span>
+        </a>
+        <nav class="main-nav" id="fm26-nav">
+          <a href="#library" class="nav-link active">Library</a>
+          <a href="#compare" class="nav-link">Compare</a>
+          <a href="#glossary" class="nav-link">Glossary</a>
+          <a href="#patches" class="nav-link">Patches</a>
+          <a href="#recommend" class="nav-link">Find Tactic</a>
+        </nav>
+        <button class="mobile-nav-toggle" id="fm26-mobile-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="fm26-content">
+      <div class="loading-container">
+        <div class="spinner"></div>
+        <p class="loading-text">Loading FM26 Tactics Center...</p>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>FM26 Tactics Resource Center. Not affiliated with Sports Interactive or SEGA.</p>
+      <p>Data last updated: <span id="fm26-last-updated">--</span></p>
+    </footer>
+  </div>
+</div>
+
+<!-- FM26 JavaScript (loaded from GitHub CDN) -->
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/router.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/data.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/search.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/pitch.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/components/tactic-card.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/components/stats-table.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/components/filter-panel.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/components/phase-toggle.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/components/comparison-slot.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/pages/library.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/pages/detail.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/pages/compare.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/pages/glossary.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/pages/patches.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/pages/recommend.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aybekrecharge4-sudo/fm26@main/fm26-tactics/js/app.js"></script>

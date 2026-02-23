@@ -1,0 +1,77 @@
+.fm26-app {
+    /* Background — Light, clean palette */
+    --fm26-bg-primary: #f8f9fa;
+    --fm26-bg-secondary: #ffffff;
+    --fm26-bg-card: #ffffff;
+    --fm26-bg-card-hover: #ffffff;
+    --fm26-bg-input: #f3f4f6;
+    --fm26-bg-pitch: #1a472a;
+    --fm26-bg-overlay: rgba(0, 0, 0, 0.5);
+
+    /* Text */
+    --fm26-text-primary: #1a1a2e;
+    --fm26-text-secondary: #4b5563;
+    --fm26-text-muted: #6b7280;
+    --fm26-text-inverse: #ffffff;
+
+    /* Accent — Green (#22c55e) matching recharge.com squad builder */
+    --fm26-accent-primary: #22c55e;
+    --fm26-accent-primary-hover: #16a34a;
+    --fm26-accent-secondary: #3b82f6;
+    --fm26-accent-warning: #f59e0b;
+    --fm26-accent-danger: #ef4444;
+    --fm26-accent-gold: #f59e0b;
+
+    /* Gradient */
+    --fm26-gradient-primary: linear-gradient(135deg, #22c55e, #16a34a);
+
+    /* Duty Colors */
+    --fm26-duty-attack: #ef4444;
+    --fm26-duty-support: #eab308;
+    --fm26-duty-defend: #3b82f6;
+
+    /* Patch Status */
+    --fm26-status-verified: #22c55e;
+    --fm26-status-outdated: #f59e0b;
+    --fm26-status-untested: #9ca3af;
+    --fm26-status-broken: #ef4444;
+
+    /* Borders */
+    --fm26-border-default: #e5e7eb;
+    --fm26-border-hover: #d1d5db;
+    --fm26-border-accent: #22c55e;
+
+    /* Radius */
+    --fm26-radius-sm: 8px;
+    --fm26-radius-md: 12px;
+    --fm26-radius-lg: 12px;
+    --fm26-radius-xl: 16px;
+    --fm26-radius-full: 9999px;
+
+    /* Shadows */
+    --fm26-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --fm26-shadow-card-hover: 0 4px 12px rgba(34, 197, 94, 0.12);
+    --fm26-shadow-dropdown: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+    /* Fonts — System font stack */
+    --fm26-font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --fm26-font-display: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+    /* Sizing */
+    --fm26-max-width: 1280px;
+    --fm26-sidebar-width: 260px;
+    --fm26-header-height: 60px;
+
+    /* Spacing */
+    --fm26-space-xs: 4px;
+    --fm26-space-sm: 8px;
+    --fm26-space-md: 16px;
+    --fm26-space-lg: 24px;
+    --fm26-space-xl: 32px;
+    --fm26-space-2xl: 48px;
+
+    /* Transitions */
+    --fm26-transition-fast: 150ms ease;
+    --fm26-transition-normal: 250ms ease;
+    --fm26-transition-slow: 400ms ease;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM26 Tactics Resource Center</title>
+    <meta name="description" content="Browse, compare, and discover Football Manager 26 tactics. Patch-aware tactic library with formation visualizer, performance stats, and recommendation engine.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pitch.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <style>
+        /* Standalone page styles (not needed in WordPress embed) */
+        html { scroll-behavior: smooth; }
+        body { margin: 0; padding: 0; background: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <div class="fm26-app" id="fm26-app">
+        <div class="fm26-inner">
+            <header class="app-header">
+                <div class="header-inner">
+                    <a href="#library" class="logo">
+                        <span class="logo-icon">&#9917;</span>
+                        <span class="logo-text">FM26 Tactics</span>
+                    </a>
+                    <nav class="main-nav" id="fm26-nav">
+                        <a href="#library" class="nav-link active">Library</a>
+                        <a href="#compare" class="nav-link">Compare</a>
+                        <a href="#glossary" class="nav-link">Glossary</a>
+                        <a href="#patches" class="nav-link">Patches</a>
+                        <a href="#recommend" class="nav-link">Find Tactic</a>
+                    </nav>
+                    <button class="mobile-nav-toggle" id="fm26-mobile-toggle" aria-label="Toggle navigation">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </header>
+
+            <main id="fm26-content">
+                <div class="loading-container">
+                    <div class="spinner"></div>
+                    <p class="loading-text">Loading FM26 Tactics Center...</p>
+                </div>
+            </main>
+
+            <footer class="app-footer">
+                <p>FM26 Tactics Resource Center. Not affiliated with Sports Interactive or SEGA.</p>
+                <p>Data last updated: <span id="fm26-last-updated">--</span></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JS: Order matters (no bundler) -->
+    <script src="js/router.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/pitch.js"></script>
+    <script src="js/components/tactic-card.js"></script>
+    <script src="js/components/stats-table.js"></script>
+    <script src="js/components/filter-panel.js"></script>
+    <script src="js/components/phase-toggle.js"></script>
+    <script src="js/components/comparison-slot.js"></script>
+    <script src="js/pages/library.js"></script>
+    <script src="js/pages/detail.js"></script>
+    <script src="js/pages/compare.js"></script>
+    <script src="js/pages/glossary.js"></script>
+    <script src="js/pages/patches.js"></script>
+    <script src="js/pages/recommend.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
