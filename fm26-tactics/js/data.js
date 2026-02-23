@@ -21,7 +21,7 @@ const DataStore = (() => {
 
     // GitHub repo coordinates — change these if you fork the repo
     const GITHUB_USER = 'aybekrecharge4-sudo';
-    const GITHUB_REPO = 'recharge-fm';
+    const GITHUB_REPO = 'fm26';
     const GITHUB_BRANCH = 'main';
     const DATA_PATH = 'fm26-tactics/data';
 
