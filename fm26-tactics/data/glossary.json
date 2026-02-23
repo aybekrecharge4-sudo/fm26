@@ -1,0 +1,314 @@
+{
+  "terms": [
+    {
+      "slug": "gegenpress",
+      "term": "Gegenpress",
+      "aliases": ["Gegenpressing", "Counter-pressing"],
+      "category": "Team Instructions",
+      "definition": "A tactical approach where the team immediately attempts to win the ball back after losing possession, pressing the opposition aggressively rather than retreating to a defensive shape.",
+      "fmContext": "In FM26, Gegenpress is implemented through the Counter-Press transition instruction combined with higher pressing urgency and a higher defensive line. Patch 26.1.3 adjusted pressing logic to make marking decisions during pressing more intelligent.",
+      "relatedTerms": ["counter-press", "pressing-intensity", "high-line"],
+      "usedInTactics": ["gegenpress-4231", "total-football-433"]
+    },
+    {
+      "slug": "counter-press",
+      "term": "Counter-Press",
+      "aliases": ["Immediate Press"],
+      "category": "Team Instructions",
+      "definition": "A transition instruction that tells your team to immediately press the opposition when possession is lost, rather than falling back into defensive shape.",
+      "fmContext": "Counter-Press is a transition phase instruction in FM26. When active, your players will aggressively close down the ball carrier and nearby opponents immediately after losing possession. Works best with high stamina players.",
+      "relatedTerms": ["gegenpress", "regroup", "transition"],
+      "usedInTactics": ["gegenpress-4231", "total-football-433"]
+    },
+    {
+      "slug": "pressing-intensity",
+      "term": "Pressing Intensity",
+      "aliases": ["Pressing Urgency", "Closing Down"],
+      "category": "Team Instructions",
+      "definition": "How aggressively your team closes down opponents when out of possession. Ranges from Much Less Urgent to Much More Urgent.",
+      "fmContext": "FM26 offers five levels of pressing urgency. Higher pressing tires players faster but wins the ball back higher up the pitch. The match engine in 26.1.3 improved AI responses to pressing, making overly aggressive pressing less effective against well-organized teams.",
+      "relatedTerms": ["gegenpress", "low-block", "counter-press"],
+      "usedInTactics": ["gegenpress-4231", "total-football-433", "low-block-442"]
+    },
+    {
+      "slug": "high-line",
+      "term": "High Defensive Line",
+      "aliases": ["High Line", "High Block"],
+      "category": "Team Instructions",
+      "definition": "Positioning your defensive line further up the pitch, compressing the space between defense and midfield while leaving space behind the backline.",
+      "fmContext": "Higher Defensive Line and Much Higher Defensive Line push your defenders closer to midfield. Best paired with an offside trap and fast center-backs. Vulnerable to balls over the top and pacy forwards.",
+      "relatedTerms": ["offside-trap", "low-block", "pressing-intensity"],
+      "usedInTactics": ["gegenpress-4231", "tiki-taka-433", "total-football-433"]
+    },
+    {
+      "slug": "low-block",
+      "term": "Low Block",
+      "aliases": ["Deep Defense", "Parking the Bus"],
+      "category": "Team Instructions",
+      "definition": "A defensive strategy where the team sits very deep, maintaining compact defensive lines close to their own goal and looking to counter-attack when winning the ball.",
+      "fmContext": "Achieved in FM26 with Lower/Much Lower Defensive Line, Less/Much Less Urgent pressing, and narrower defensive width. Effective with disciplined defenders and quick forwards for counter-attacks.",
+      "relatedTerms": ["catenaccio", "counter-attack", "pressing-intensity"],
+      "usedInTactics": ["catenaccio-532", "low-block-442"]
+    },
+    {
+      "slug": "tiki-taka",
+      "term": "Tiki-Taka",
+      "aliases": ["Positional Play"],
+      "category": "General",
+      "definition": "A possession-based style of play characterized by short passing, movement, and maintaining ball control. Emphasizes patient build-up play and positional superiority.",
+      "fmContext": "In FM26, Tiki-Taka is built through Shorter Passing, Lower Tempo, Play Out of Defence, and high technical ability across the squad. Requires players with strong passing, vision, and decision-making attributes.",
+      "relatedTerms": ["possession", "shorter-passing", "play-out-of-defence"],
+      "usedInTactics": ["tiki-taka-433"]
+    },
+    {
+      "slug": "catenaccio",
+      "term": "Catenaccio",
+      "aliases": ["Door Bolt"],
+      "category": "General",
+      "definition": "An Italian defensive tactical system that emphasizes a strong, organized defense, often with a sweeper (libero) behind the defensive line, and relies on counter-attacks for scoring.",
+      "fmContext": "In FM26, Catenaccio can be recreated using a 5-3-2 or 5-4-1 with a Libero role, low defensive line, deep compact shape, and counter-attacking transition instructions.",
+      "relatedTerms": ["low-block", "libero", "counter-attack"],
+      "usedInTactics": ["catenaccio-532"]
+    },
+    {
+      "slug": "advanced-playmaker",
+      "term": "Advanced Playmaker",
+      "aliases": ["AP", "No. 10"],
+      "category": "Roles",
+      "definition": "A creative midfielder who operates between the lines, looking to thread passes and create chances from an advanced position.",
+      "fmContext": "The Advanced Playmaker role requires high Vision, Passing, Technique, and Decisions. On Support duty, they drop deeper to collect. On Attack duty, they push higher and take more risks. Available in AMC, MC positions.",
+      "relatedTerms": ["deep-lying-playmaker", "trequartista", "mezzala"],
+      "usedInTactics": ["tiki-taka-433", "gegenpress-4231"]
+    },
+    {
+      "slug": "deep-lying-playmaker",
+      "term": "Deep-Lying Playmaker",
+      "aliases": ["DLP", "Regista"],
+      "category": "Roles",
+      "definition": "A midfielder who drops deep to receive the ball from defense and dictates play from a withdrawn position, orchestrating attacks with long and short passes.",
+      "fmContext": "The DLP sits deeper than other midfielders, acting as a pivot between defense and attack. Requires excellent Passing, Vision, Technique, and Composure. On Support they stay deeper; on Defend they prioritize ball recovery.",
+      "relatedTerms": ["advanced-playmaker", "anchor-man", "regista"],
+      "usedInTactics": ["tiki-taka-433", "fluid-counter-4141"]
+    },
+    {
+      "slug": "inside-forward",
+      "term": "Inside Forward",
+      "aliases": ["IF", "Inverted Winger"],
+      "category": "Roles",
+      "definition": "A wide attacker who cuts inside from the wing onto their stronger foot, looking to shoot or create from central positions rather than crossing from wide areas.",
+      "fmContext": "Inside Forwards need to be on the opposite flank to their strong foot (e.g., left-footed on the right wing). They need Dribbling, Finishing, and Off the Ball. On Attack duty they prioritize shooting; on Support they look for through balls.",
+      "relatedTerms": ["winger", "inverted-winger", "raumdeuter"],
+      "usedInTactics": ["gegenpress-4231", "total-football-433"]
+    },
+    {
+      "slug": "winger",
+      "term": "Winger",
+      "aliases": ["Wide Player"],
+      "category": "Roles",
+      "definition": "A wide attacker who stays near the touchline, uses pace and dribbling to beat fullbacks, and delivers crosses into the box.",
+      "fmContext": "Wingers in FM26 hug the touchline and focus on delivering crosses. They need Crossing, Dribbling, Pace, and Acceleration. On Attack duty they stay higher and wider; on Support they track back more.",
+      "relatedTerms": ["inside-forward", "wing-back", "wing-play"],
+      "usedInTactics": ["wing-play-3421", "route-one-442"]
+    },
+    {
+      "slug": "ball-winning-midfielder",
+      "term": "Ball-Winning Midfielder",
+      "aliases": ["BWM", "Destroyer"],
+      "category": "Roles",
+      "definition": "A midfielder whose primary job is to win the ball back through tackles and interceptions, disrupting opposition attacks.",
+      "fmContext": "BWMs need high Tackling, Work Rate, Stamina, Aggression, and Positioning. On Defend duty they sit and screen; on Support they push forward after winning the ball. Pair with a creative midfielder for balance.",
+      "relatedTerms": ["anchor-man", "box-to-box-midfielder", "pressing-intensity"],
+      "usedInTactics": ["gegenpress-4231", "route-one-442"]
+    },
+    {
+      "slug": "box-to-box-midfielder",
+      "term": "Box-to-Box Midfielder",
+      "aliases": ["BBM", "Engine"],
+      "category": "Roles",
+      "definition": "A dynamic midfielder who contributes at both ends of the pitch, making late runs into the box on attack and tracking back to defend.",
+      "fmContext": "BBMs need a well-rounded attribute profile: Stamina, Work Rate, Tackling, Passing, Off the Ball, and Finishing. They cover the most ground of any midfield role. Only available on Support duty.",
+      "relatedTerms": ["mezzala", "carrilero", "ball-winning-midfielder"],
+      "usedInTactics": ["total-football-433", "route-one-442"]
+    },
+    {
+      "slug": "pressing-forward",
+      "term": "Pressing Forward",
+      "aliases": ["PF"],
+      "category": "Roles",
+      "definition": "A striker who leads the press from the front, closing down defenders and goalkeepers to force turnovers in dangerous areas.",
+      "fmContext": "Pressing Forwards need high Work Rate, Aggression, Stamina, Closing Down, and Teamwork. They may not score as many as a Poacher but they create opportunities through pressing. Available on Attack, Support, and Defend duties.",
+      "relatedTerms": ["advanced-forward", "defensive-forward", "gegenpress"],
+      "usedInTactics": ["gegenpress-4231", "total-football-433"]
+    },
+    {
+      "slug": "advanced-forward",
+      "term": "Advanced Forward",
+      "aliases": ["AF"],
+      "category": "Roles",
+      "definition": "A striker who plays on the shoulder of the last defender, making runs in behind the defense and finishing chances.",
+      "fmContext": "The AF is the most attack-focused striker role. Needs Finishing, Composure, Off the Ball, Pace, and Acceleration. Always on Attack duty. They stay high and make runs in behind rather than dropping deep.",
+      "relatedTerms": ["pressing-forward", "poacher", "complete-forward"],
+      "usedInTactics": ["route-one-442", "fluid-counter-4141"]
+    },
+    {
+      "slug": "complete-forward",
+      "term": "Complete Forward",
+      "aliases": ["CF"],
+      "category": "Roles",
+      "definition": "A versatile striker who can do everything: hold up play, run channels, press, score, and create. The most demanding striker role.",
+      "fmContext": "Complete Forwards need elite attributes across the board: Finishing, Heading, Strength, Passing, First Touch, Off the Ball, and Dribbling. On Support they drop deep and link play; on Attack they stay central.",
+      "relatedTerms": ["advanced-forward", "deep-lying-forward", "target-man"],
+      "usedInTactics": ["tiki-taka-433"]
+    },
+    {
+      "slug": "wing-back",
+      "term": "Wing-Back",
+      "aliases": ["WB"],
+      "category": "Roles",
+      "definition": "A wide defender who pushes high up the pitch to provide width and crossing options in attack, while tracking back to defend.",
+      "fmContext": "Wing-Backs are crucial in 3-at-the-back formations. They need Stamina, Pace, Crossing, Tackling, and Work Rate. On Attack duty they play almost like wingers; on Support they balance attack and defense.",
+      "relatedTerms": ["full-back", "inverted-wing-back", "winger"],
+      "usedInTactics": ["wing-play-3421", "catenaccio-532"]
+    },
+    {
+      "slug": "libero",
+      "term": "Libero",
+      "aliases": ["Sweeper"],
+      "category": "Roles",
+      "definition": "A central defender who has freedom to step out of the defensive line with the ball, starting attacks from deep and covering behind the other defenders.",
+      "fmContext": "The Libero is a high-risk, high-reward role. Needs excellent Passing, Vision, Composure, Anticipation, and Pace. On Support they step into midfield with the ball; on Defend they mostly sweep behind the line.",
+      "relatedTerms": ["ball-playing-defender", "catenaccio", "half-back"],
+      "usedInTactics": ["catenaccio-532"]
+    },
+    {
+      "slug": "xg",
+      "term": "Expected Goals (xG)",
+      "aliases": ["xG"],
+      "category": "Analytics",
+      "definition": "A statistical measure of the quality of chances created, calculated as the probability that a shot will result in a goal based on characteristics like shot location, angle, body part, and assist type.",
+      "fmContext": "FM26 prominently features xG in the match UI and Data Hub. xG is used as matchday advice context. A team consistently outperforming their xG may be finishing well but could regress; underperforming may improve.",
+      "relatedTerms": ["xa", "ppg"],
+      "usedInTactics": []
+    },
+    {
+      "slug": "xa",
+      "term": "Expected Assists (xA)",
+      "aliases": ["xA"],
+      "category": "Analytics",
+      "definition": "A statistical measure of the quality of chances created by a player's passes, calculated as the likelihood that a pass will lead to a goal based on the resulting shot opportunity.",
+      "fmContext": "FM26 uses xA alongside xG in its analytics suite. High xA indicates a player is creating quality chances regardless of whether teammates finish them.",
+      "relatedTerms": ["xg", "key-passes"],
+      "usedInTactics": []
+    },
+    {
+      "slug": "ppg",
+      "term": "Points Per Game",
+      "aliases": ["PPG"],
+      "category": "Analytics",
+      "definition": "The average number of league points earned per match. A standard benchmark: 2.0+ PPG is typically title-winning form, 1.5-2.0 is top-half, below 1.2 is relegation zone.",
+      "fmContext": "PPG is the primary metric used to evaluate tactic effectiveness in FM testing. Standardized tests typically sim 10 seasons (380 matches) and report average PPG to account for variance.",
+      "relatedTerms": ["xg", "win-rate"],
+      "usedInTactics": []
+    },
+    {
+      "slug": "offside-trap",
+      "term": "Offside Trap",
+      "aliases": ["Offside Line"],
+      "category": "Team Instructions",
+      "definition": "A defensive instruction where the backline moves up in unison to catch attackers offside, requiring precise timing and coordination.",
+      "fmContext": "Use Offside Trap is a defensive instruction in FM26. Works best with a high defensive line and defenders with high Anticipation, Concentration, and Positioning. Risky against very fast forwards.",
+      "relatedTerms": ["high-line", "pressing-intensity"],
+      "usedInTactics": ["gegenpress-4231", "total-football-433"]
+    },
+    {
+      "slug": "counter-attack",
+      "term": "Counter-Attack",
+      "aliases": ["Counter", "On the Break"],
+      "category": "Team Instructions",
+      "definition": "A transition instruction telling the team to quickly move the ball forward when winning possession, exploiting the opposition's high positioning.",
+      "fmContext": "Counter-Attack is a transition instruction in FM26. When active, players make forward runs immediately after winning the ball. Pair with Distribute Quickly for maximum effect. Best with pacey forwards and direct passing.",
+      "relatedTerms": ["regroup", "counter-press", "transition"],
+      "usedInTactics": ["catenaccio-532", "low-block-442", "fluid-counter-4141"]
+    },
+    {
+      "slug": "transition",
+      "term": "Transition",
+      "aliases": ["Transition Phase"],
+      "category": "General",
+      "definition": "The moment when possession changes hands. Offensive transition is when your team wins the ball; defensive transition is when you lose it. How a team behaves in these moments is critical.",
+      "fmContext": "FM26 has dedicated transition instructions: Counter-Press, Regroup, Counter-Attack, Distribute Quickly, and various distribution options. The transition phase is when many goals are scored.",
+      "relatedTerms": ["counter-press", "counter-attack", "regroup"],
+      "usedInTactics": []
+    },
+    {
+      "slug": "regroup",
+      "term": "Regroup",
+      "aliases": ["Fall Back"],
+      "category": "Team Instructions",
+      "definition": "A transition instruction telling the team to quickly fall back into defensive shape after losing possession, rather than pressing immediately.",
+      "fmContext": "Regroup is the opposite of Counter-Press. When active, players retreat to their defensive positions. Best for teams that want to maintain defensive solidity and avoid being caught on the break.",
+      "relatedTerms": ["counter-press", "low-block", "transition"],
+      "usedInTactics": ["catenaccio-532", "low-block-442"]
+    },
+    {
+      "slug": "mezzala",
+      "term": "Mezzala",
+      "aliases": ["Half-Space Midfielder"],
+      "category": "Roles",
+      "definition": "A midfielder who drifts into the half-spaces between the center and the wing, combining the qualities of a central midfielder and a wide attacker.",
+      "fmContext": "Mezzalas in FM26 operate in the MC position but move into wide areas during attacks. Need Dribbling, Passing, Off the Ball, and good physical attributes. On Attack duty they push very high.",
+      "relatedTerms": ["box-to-box-midfielder", "carrilero", "advanced-playmaker"],
+      "usedInTactics": ["tiki-taka-433", "total-football-433"]
+    },
+    {
+      "slug": "anchor-man",
+      "term": "Anchor Man",
+      "aliases": ["Holding Midfielder", "Pivot"],
+      "category": "Roles",
+      "definition": "A defensive midfielder who sits in front of the defense and rarely moves from that position, providing a shield and recycling possession.",
+      "fmContext": "The Anchor Man is the most disciplined defensive midfield role. They hold position, intercept passes, and lay off simple balls. Need Positioning, Tackling, Concentration, Anticipation. Only available on Defend duty.",
+      "relatedTerms": ["deep-lying-playmaker", "ball-winning-midfielder", "half-back"],
+      "usedInTactics": ["catenaccio-532", "fluid-counter-4141"]
+    },
+    {
+      "slug": "ball-playing-defender",
+      "term": "Ball-Playing Defender",
+      "aliases": ["BPD"],
+      "category": "Roles",
+      "definition": "A central defender who is comfortable on the ball and looks to play passes out from the back rather than simply clearing it.",
+      "fmContext": "BPDs need good Passing, Vision, Composure, and First Touch in addition to standard defensive attributes. They support build-up play from the back. Essential for possession-based systems.",
+      "relatedTerms": ["libero", "central-defender"],
+      "usedInTactics": ["tiki-taka-433", "gegenpress-4231", "total-football-433"]
+    },
+    {
+      "slug": "target-man",
+      "term": "Target Man",
+      "aliases": ["TM"],
+      "category": "Roles",
+      "definition": "A physically dominant striker who acts as a focal point for long balls and crosses, holding up play and bringing teammates into the attack.",
+      "fmContext": "Target Men need Heading, Jumping Reach, Strength, Hold Up Play, and Teamwork. On Support duty they drop deep to receive and lay off; on Attack duty they stay in the box. Essential for Route One tactics.",
+      "relatedTerms": ["advanced-forward", "complete-forward", "route-one"],
+      "usedInTactics": ["route-one-442"]
+    },
+    {
+      "slug": "route-one",
+      "term": "Route One",
+      "aliases": ["Long Ball", "Direct Football"],
+      "category": "General",
+      "definition": "A direct style of play that bypasses midfield by playing long balls from defense to attack, relying on physical forwards to win aerial duels and create chances.",
+      "fmContext": "In FM26, Route One is achieved through More Direct/Direct Passing, Higher Tempo, and having a Target Man or physically dominant forward. Effective with limited squads that struggle to keep possession.",
+      "relatedTerms": ["target-man", "direct-passing", "long-ball"],
+      "usedInTactics": ["route-one-442"]
+    },
+    {
+      "slug": "possession",
+      "term": "Possession",
+      "aliases": ["Ball Retention"],
+      "category": "Analytics",
+      "definition": "The percentage of time a team has control of the ball during a match. Higher possession generally indicates more control but doesn't guarantee more chances or wins.",
+      "fmContext": "Possession in FM26 is influenced by passing directness, tempo, pressing, and line heights. Possession-heavy tactics (55%+) suit technical squads. Some effective tactics deliberately sacrifice possession for directness.",
+      "relatedTerms": ["tiki-taka", "shorter-passing", "pass-completion"],
+      "usedInTactics": []
+    }
+  ]
+}
